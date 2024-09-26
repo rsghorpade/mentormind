@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTest Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home"><img src="logo1.jpg" alt="Radhika's Lab" height="300" width="100"></a> Radhika's Lab
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#lab-tests">Tests</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="images-wrapper">
+            <img src="hosiptal_img.jpg" alt="Lab Image" class="image">
+        </div>
+        <div class="banner-text">
+            <h1>Welcome to <span> Radhik's Lab </span></h1>
+            <p> Let's Discover the Power of Good Health.</p>
+            <a href="#lab-tests" class="cta-button">Explore Lab Tests</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At LabTest Booking, Easily book your lab tests online with our convenient and secure platform.
+
+            Features:
+            Simple Registration & Login: Create an account and securely log in to manage your bookings.
+            Wide Range of Tests: Browse and select from various lab tests tailored to your needs.
+            Appointment Scheduling: Choose your preferred date and time for lab test appointments.</p>
+        <div class="features">
+            <div class="feature-box">
+                <img src="doctor.jpg" alt="Expert Doctors" height="300" width="300">
+                <h3>Expert Doctors</h3>
+                <p>Our platform connects you with the top medical professionals across various specialties. We bring together 
+                    a team of highly qualified and experienced doctors dedicated to providing the best possible care.</p>
+            </div>
+            <div class="feature-box">
+                <img src="technology.jpg" alt="Advanced Technology" height="300" width="300">
+                <h3>Advanced Technology</h3>
+                <p>We leverage cutting-edge technology to provide precise, efficient, and reliable healthcare services. Our state-of-the-art equipment and innovative techniques ensure 
+                    that our patients receive the most advanced diagnostic and treatment options available.</p>
+            </div>
+            <div class="feature-box">
+                <img src="service.jpg" alt="24/7 Support" height="300" width="300">
+                <h3>24/7 Support</h3>
+                <p>We're here to assist you at every step of your healthcare journey. Our dedicated support team is available to answer your questions,
+                     resolve issues, and guide you through booking appointments or accessing medical services..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+            <br>
+
+        </form>
+    </section>
+
+    <!-- Lab Tests Section -->
+    <section id="lab-tests" class="lab-tests-section">
+        <h2>Our Lab Tests</h2>
+        <div class="test-cards">
+            <div class="test-card">
+                <img src="blood_test.jpg" alt="Blood Test" height="200" width="200">
+                <h3>Blood Test</h3>
+                <p>Price: 250 Rs</p>
+                <button>Book Now</button>
+            </div>
+            <div class="test-card">
+                <img src="ct_scan.jpg" alt="CT Scan" height="200" width="200">
+                <h3>CT Scan</h3>
+                <p>Price: 2000 Rs</p>
+                <button>Book Now</button>
+            </div>
+            <div class="test-card">
+                <img src="xray.jpg" alt="X-Ray" height="200" width="200">
+                <h3>X-Ray</h3>
+                <p>Price: 500 Rs</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <br>
+        <form>
+        <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LabTest Booking. All rights reserved.</p>
+        <p>For any queries, contact: <a href="mailto:radhikaghorpade1111@gmail.com">radhikaghorpade1111@gmail.com</a></p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
+</body>
+</html>
